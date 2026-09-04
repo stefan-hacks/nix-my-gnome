@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nix-my-gnome"
+version = "0.1.0"
+description = "Convert a dconf dump into a home-manager compatible dconf.settings Nix module"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "stefan-hacks" }
+]
+keywords = ["nix", "nixos", "home-manager", "dconf", "gnome"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Installation/Setup",
+]
+
+[project.urls]
+Homepage = "https://github.com/stefan-hacks/nix-my-gnome"
+Issues = "https://github.com/stefan-hacks/nix-my-gnome/issues"
+
+[project.scripts]
+nmg = "nmg.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["nmg*"]
