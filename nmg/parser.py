@@ -195,7 +195,7 @@ class _ValueParser:
         self._ws()
         if self._peek() == "}":
             self.i += 1
-            return "{ }"
+            return "[ ]"
         entries = []
         while True:
             self._ws()
@@ -206,7 +206,7 @@ class _ValueParser:
             self._ws()
             val = self.parse_value()
             keyname = key if (key.startswith('"') and key.endswith('"')) else f'"{key}"'
-            entries.append(f"{keyname} = {val};")
+            entries.append(f"(lib.hm.gvariant.mkDictionaryEntry [ {keyname} {val} ])")
             self._ws()
             if self._peek() == ",":
                 self.i += 1
@@ -217,7 +217,7 @@ class _ValueParser:
             raise GVariantParseError(
                 f"expected ',' or '}}' at position {self.i} in {self.s!r}"
             )
-        return "{ " + " ".join(entries) + " }"
+        return "[ " + " ".join(entries) + " ]"
 
 
 def parse_value(text: str) -> str:

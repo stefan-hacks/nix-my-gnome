@@ -46,7 +46,7 @@ def test_negative_numbers_are_parenthesized():
 
 def test_dict():
     result = parse_value("{'position': <0>}")
-    assert result == '{ "position" = (lib.hm.gvariant.mkVariant 0); }'
+    assert result == '[ (lib.hm.gvariant.mkDictionaryEntry [ "position" (lib.hm.gvariant.mkVariant 0) ]) ]'
 
 
 def test_variant_wrapping_tuple():

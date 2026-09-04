@@ -75,8 +75,8 @@ gets you a reproducible, always-available copy of the tool.
 # flake.nix
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
 
     nix-my-gnome.url = "github:stefan-hacks/nix-my-gnome";
     # keep it locked to your nixpkgs to avoid pulling a second copy:
