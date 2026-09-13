@@ -48,7 +48,8 @@ the -s split is my fav create a directory that splits it into files
 or without will generate a single file:
 
 ```console
-$ dconf dump / | nix run github:stefan-hacks/nix-my-gnome -- -s -o gnome```
+$ dconf dump / | nix run github:stefan-hacks/nix-my-gnome -- -s -o gnome
+```
 
 Or from a saved dump file:
 
