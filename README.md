@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- NixOS Snowflake Logo -->
-<img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nix-snowflake.svg" width="140" alt="NixOS Snowflake Logo" />
-
 <!-- Project Title -->
 <h1 align="center">nix-my-gnome</h1>
 
