@@ -43,11 +43,12 @@ GNOME decided to persist.
 
 ## 🚀 Quickstart
 
-Generate your settings straight from your live dconf database:
+Generate your settings straight from your live dconf database 
+the -s split is my fav create a directory that splits it into files
+or without will generate a single file:
 
 ```console
-$ dconf dump / | nix run github:stefan-hacks/nix-my-gnome -- -o home.nix
-```
+$ dconf dump / | nix run github:stefan-hacks/nix-my-gnome -- -s -o gnome```
 
 Or from a saved dump file:
 
