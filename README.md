@@ -7,7 +7,7 @@
 <h1 align="center">nix-my-gnome</h1>
 
 <!-- Tagline -->
-<p align="center"><strong>Turn your GNOME dconf dump into a declarative Home Manager module.</strong></p>
+<p align="center"><strong>Turn your GNOME dconf dump into a declarative Home Manager module. AI Helped Me build this useful utility </strong></p>
 
 <!-- Badges -->
 <p align="center">
